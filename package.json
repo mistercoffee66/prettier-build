@@ -1,0 +1,20 @@
+{
+  "name": "prettier",
+  "version": "1.17.1-se.1.0.0",
+  "description": "[forked] Prettier is an opinionated code formatter",
+  "bin": "./bin-prettier.js",
+  "repository": "samelwitt/prettier",
+  "homepage": "https://github.com/samelwitt/prettier",
+  "author": "James Long, Sam Elwitt",
+  "license": "MIT",
+  "main": "./index.js",
+  "engines": {
+    "node": ">=4"
+  },
+  "scripts": {
+    "prepublishOnly": "node -e \"assert.equal(require('.').version, require('..').version)\""
+  },
+  "files": [
+    "*.js"
+  ]
+}
