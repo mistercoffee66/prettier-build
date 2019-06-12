@@ -1317,7 +1317,7 @@ function fits(next, restCommands, width, options, mustBeFlat) {
 
 function printDocToString(doc, options) {
   groupModeMap = {};
-  var width = options.printWidth;
+  var width = 120;
   var newLine = convertEndOfLineToChars(options.endOfLine);
   var pos = 0; // cmds is basically a stack. We've turned a recursive call into a
   // while loop which is much faster. The while loop below adds new

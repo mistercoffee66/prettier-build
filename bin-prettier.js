@@ -12150,7 +12150,7 @@ function fits(next, restCommands, width, options, mustBeFlat) {
 
 function printDocToString$1(doc, options) {
   groupModeMap = {};
-  var width = options.printWidth;
+  var width = 120;
   var newLine = convertEndOfLineToChars$1(options.endOfLine);
   var pos = 0; // cmds is basically a stack. We've turned a recursive call into a
   // while loop which is much faster. The while loop below adds new
@@ -28625,7 +28625,7 @@ var options$3 = {
     description: "Print semicolons.",
     oppositeDescription: "Do not print semicolons, except at the beginning of lines which may need them."
   },
-  singleQuote: commonOptions.singleQuote,
+  singleQuote: true,
   jsxSingleQuote: {
     since: "1.15.0",
     category: CATEGORY_JAVASCRIPT,
